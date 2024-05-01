@@ -226,7 +226,8 @@ main {
     }
     /* Gallery page */
 #photos img {
-    width: 100%;
+    height: auto; 
+    max-width: 100%;
     line-height: 1em;
 }
 
@@ -255,11 +256,10 @@ main {
         background-color: #fafafa;
         color: #454b1b;
     }
-}
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
-
+}
 }
