@@ -1,4 +1,7 @@
- 
+
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -12,9 +15,10 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: black;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Glass Antiqua', sans-serif;
     background-color: #fff5df;
 }
+
 
 
 
@@ -87,27 +91,32 @@ nav {
 main {
     /* Push main content down to accommodate larger header */
     margin-top: 79px;
+    flex: 1;
 }
 
 #background-flowers {
     background: url("../images/flowers.png") no-repeat center center/cover;
     width: 100%;
     height: 600px;
-    position: relative;
+    position:relative;
 }
 
+
 #cover-text {
-    /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: #e0b0ff80;
-    font-size: 130%;
+    background-color: #e0b0ff;
+    font-size: 160%;
     position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     bottom: 30px;
-    width: 80%;
-    min-height: 200px;
+    width: 90%;
+    min-height: 250px;
     padding-top: 40px;
     padding-left: 10px;
-    border: 10px;
+    border-width: 10px;
     border-color: #000;
+
 }
 
 #cover-text > p {
@@ -119,7 +128,9 @@ main {
 #contact {
     background-image: url("../images/download.jpg");
     background-size: cover;
+    background-repeat:no-repeat;
     background-position: 75%;
+    min-height: 100vh;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
 }
@@ -129,6 +140,7 @@ main {
     color: #000;
     background-color: #e0b0ff;
     padding: 30px;
+    font-family:'Roboto',sans-serif;
 }
 
 
@@ -148,14 +160,6 @@ main {
     border-radius: 2px;
     padding: 0 5px;
 }
-
-
-.radio-buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 
 .join-button {
     margin-top: 20px;
@@ -186,9 +190,13 @@ main {
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
-    nav {
-        display: block;
+    header { 
         position: relative;
+    }
+    nav {
+        display: flex;
+        position: static;
+        justify-content: flex-end;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
@@ -196,10 +204,11 @@ main {
 
     #menu {
         display: flex;
+        flex-direction: row;
     }
 
     #menu > li {
-        padding-left: 1rem;
+        padding-left: 20px;
     }
 
     .nav-toggle-label {
@@ -242,11 +251,11 @@ main {
     }
 
     #contact-form {
-        max-width: 400px;
-        position: absolute;
-        left: 10%;
-        top: 150px;
+        position: static; /* Resets the form position */
+        margin: 10 auto; /* Centers the form */
+        max-width: 480px; /* Adjusts the maximum width for better readability */
     }
+    
 
     .text-input:hover {
         border-color: #f16c6b;
@@ -260,6 +269,10 @@ main {
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
+    =}
+
+    #background-flowers {
+        height: 80vh; /* Adjust the height as per the visual requirement */
     }
 }
 }
