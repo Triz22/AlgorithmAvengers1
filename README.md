@@ -1,7 +1,7 @@
 The Canvas Revire Art website is a site that displays Maxine Gregson's incredible art work and gives the user a chance to browse through all the different pieces of art Maxine has created and also allows the user to purchase any art they like. We created this website with the purpose of expanding Maxines outreach and allowing people to purchase her art.
 
 
-FEATURES/VISUALS
+# FEATURES/VISUALS
 
 The Home page consists of a bright coloured background with an image of flowers creeping up the page. Within the center of the Home page is a welcome message within a purple box. Finally at the top of the page we have the website name in the top left, further to the right of the top of the page we have the nav bar which shows the different pages which can be rached by clicking them.
 
@@ -19,12 +19,12 @@ The footer is also fixed and identical on all pages. The footer includes links t
 
 Alternative text has also been provided for if the images for if in case they do not render the user will be able to read what the images are supposed to portray.
 
-UX
+# UX
 
 Site goals:
 The Canvas Revire Art website is a site that is designed to display Maxine Gregson's incredible art work and gives the user a chance to browse through all the different pieces of art Maxine has created and also allows the user to purchase any art they like. We created this website with the purpose of expanding Maxines outreach and allowing people to purchase her art.
 
-User Stories:
+## User Stories:
 As a user i would like to be able to view an about section regarding the artist.
 As a user i would like to easily be able to make purchases of the site.
 As a user i want to view the artists work.
@@ -33,6 +33,17 @@ As a user i would like to have easy access to the artists social media platforms
 As a user i would like to see a clear non constrating home page so it is easy to read.
 As a user i would like to be able to clearly distinguish which page i am on from the nav bar.
 
+# Testing
+
+# Features Left to Implement
+
+# Validator Testing
+
+# Deployment 
+
+# Credits 
+
+## Content
 
 
 
