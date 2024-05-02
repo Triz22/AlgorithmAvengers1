@@ -24,11 +24,6 @@ body {
 
 /*------Header-----*/
 
-img {
-    max-width: 10vh;
-    max-height: 10vh;
-}
-
 header {
     background-color: #fff5df;
     padding: 0 1rem;
@@ -91,16 +86,14 @@ nav {
 main {
     /* Push main content down to accommodate larger header */
     margin-top: 79px;
-    flex: 1;
 }
 
 #background-flowers {
     background: url("../images/flowers.png") no-repeat center center/cover;
     width: 100%;
     height: 600px;
-    position:relative;
+    position: relative;
 }
-
 
 #cover-text {
     background-color: #e0b0ff;
@@ -161,6 +154,14 @@ main {
     padding: 0 5px;
 }
 
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .join-button {
     margin-top: 20px;
     border-radius: 2px;
@@ -170,13 +171,16 @@ main {
     color: #fafafa;
 }
     /* Gallery page */
-#photos img {
-        width: 100%;
-        line-height: 1em;
+    #photos {
+        display: flex;            /* Using flex layout to ensure images line up nicely */
+        flex-wrap: wrap;          /* Allows items to wrap as needed */
+        gap: 10px;                /* Adds space between images */
+        justify-content: center;  /* Center the images horizontally */
     }
-    
- #photos {
-        line-height: 0;
+    #photos img {
+        width: 100%;              /* Each image will fill the width of its container */
+        height: auto;             /* Maintain the aspect ratio */
+        max-width: 300px;         /* Sets a maximum width for each image */
     }
 /* Footer */
 
@@ -205,13 +209,9 @@ main {
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
-    header { 
-        position: relative;
-    }
     nav {
-        display: flex;
-        position: static;
-        justify-content: flex-end;
+        display: block;
+        position: relative;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
@@ -219,11 +219,10 @@ main {
 
     #menu {
         display: flex;
-        flex-direction: row;
     }
 
     #menu > li {
-        padding-left: 20px;
+        padding-left: 1rem;
     }
 
     .nav-toggle-label {
@@ -231,9 +230,10 @@ main {
     }
 
     #logo {
-        font-size: 280%;
+        font-size: 100%;
         line-height: 75px;
         margin: 0 0.5rem;
+        background-image: url('');
     }
 
     /* Main content */
@@ -247,16 +247,9 @@ main {
         width: 300px;
         right: 50px;
     }
-<<<<<<< HEAD
-=======
-    /* Gallery page */
-#photos img {
-    height: auto; 
-    max-width: 100%;
-    line-height: 1em;
-}
->>>>>>> main
-
+    #photos img {
+        max-width: 200px; /* Larger viewports allow larger images */
+    }
 
      /* Form */
      #contact {
@@ -265,11 +258,11 @@ main {
     }
 
     #contact-form {
-        position: static; /* Resets the form position */
-        margin: 10 auto; /* Centers the form */
-        max-width: 480px; /* Adjusts the maximum width for better readability */
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
     }
-    
 
     .text-input:hover {
         border-color: #f16c6b;
@@ -286,15 +279,11 @@ main {
         border-bottom: 1px solid #3a3a3a;
     }
 
-<<<<<<< HEAD
     /* Gallery */
     #photos {
         column-count: 4;
     }
-}
-=======
-    #background-flowers {
-        height: 80vh; /* Adjust the height as per the visual requirement */
+    #photos img {
+        max-width: 250px; /* Even larger images on wide screens */
     }
 }
->>>>>>> main
