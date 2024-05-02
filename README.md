@@ -24,6 +24,16 @@ UX
 Site goals:
 The Canvas Revire Art website is a site that is designed to display Maxine Gregson's incredible art work and gives the user a chance to browse through all the different pieces of art Maxine has created and also allows the user to purchase any art they like. We created this website with the purpose of expanding Maxines outreach and allowing people to purchase her art.
 
+User Stories:
+As a user i would like to be able to view an about section regarding the artist.
+As a user i would like to easily be able to make purchases of the site.
+As a user i want to view the artists work.
+As a user i would like to be able to contact the artist regarding purchases.
+As a user i would like to have easy access to the artists social media platforms.
+As a user i would like to see a clear non constrating home page so it is easy to read.
+As a user i would like to be able to clearly distinguish which page i am on from the nav bar.
+
+
 
 
 
