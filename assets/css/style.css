@@ -123,6 +123,22 @@ main {
     color: #000;
 }
 
+#photos {
+    display: flex;            /* Using flex layout to ensure images line up nicely */
+    flex-direction: flex;
+    flex-wrap: wrap;          /* Allows items to wrap as needed */
+    gap: 30px;                /* Adds space between images */
+    justify-content:space-evenly; /* Center the images horizontally */
+}
+#photos img {
+    width: 100%;              /* Each image will fill the width of its container */
+    min-height: 200px;             /* Maintain the aspect ratio */
+    max-width: 300px;         /* Sets a maximum width for each image */
+}
+
+main div p {font-size: x-large;
+
+}
 
 /* Form */
 #contact {
@@ -186,6 +202,13 @@ main {
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -233,15 +256,11 @@ main {
         right: 50px;
     }
     /* Gallery page */
-#photos img {
-    height: auto; 
-    max-width: 100%;
-    line-height: 1em;
-}
+    #photos img {
+        max-width: 200px; /* Larger viewports allow larger images */
+    }
 
-#photos {
-    line-height: 0;
-}
+
 
      /* Form */
      #contact {
@@ -273,5 +292,12 @@ main {
 
     #background-flowers {
         height: 80vh; /* Adjust the height as per the visual requirement */
+    }
+
+    #photos {
+        column-count: 4;
+    }
+    #photos img {
+        max-width: 250px; /* Even larger images on wide screens */
     }
 }
