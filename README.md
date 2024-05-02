@@ -42,6 +42,8 @@ As a user i would like to be able to clearly distinguish which page i am on from
 # Deployment 
 
 # Credits 
+We referred to Love Running CI walkthrough project https://github.com/Code-Institute-Solutions/love-running-v3/
+We referred to the pawtrait purrfectionist https://github.com/tomcow88/teamBrizzle/blob/main/README.md
 
 ## Content
 
